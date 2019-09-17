@@ -2,7 +2,9 @@
 
 Search song lyrics or, the other way around, search songs from lyrics.
 
-Available as a CL library and as a terminal application.
+This is a fork from
+[lyrics](https://github.com/mihaiolteanu/lyrics/)
+that adds a terminal (readline) interface. And btw, it was done quickly with the [replic](https://github.com/vindarel/replic/) library.
 
 
 # Installation
@@ -19,7 +21,7 @@ git clone https://github.com/mihaiolteanu/lyrics ~/quicklisp/local-projects/lyri
 
 ```bash
 # A sqlite3 database is used to store the lyrics
-sudo pacman -S sqlite3 
+sudo pacman -S sqlite3
 ```
 
 Optionally, build the terminal app:
@@ -29,7 +31,14 @@ make build
 ```
 
 This produces a `lyrics` binary with the two commands `lyrics` and
-`search-song` available.
+`search-song` available (see the `help`).
+
+See more options and usage on [replic](https://github.com/vindarel/replic/).
+
+TODOs:
+
+- install with Roswell
+- parse CLI args
 
 
 # Usage
@@ -73,7 +82,7 @@ input string.
     artist-name and song-name lists. This is a batch request for lyrics. The actual
     lyrics can be later retrieved from the database since this function only returns
     the thread that is started for the request.
-    
+
 **search-song** _lyrics_
 
     Return a list of entries, where each entry is a list with the artist name,
