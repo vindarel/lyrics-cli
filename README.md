@@ -11,7 +11,7 @@ that adds a terminal (readline) interface. And btw, it was done quickly with the
 
 ```bash
 # clone to local-projects for quickload access
-git clone https://github.com/mihaiolteanu/lyrics ~/quicklisp/local-projects/lyrics
+git clone https://github.com/vindarel/lyrics-cli ~/quicklisp/local-projects/lyrics
 ```
 
 ```common-lisp
